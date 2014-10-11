@@ -87,7 +87,7 @@
 				
 				<!-- admin panel start-->
 				<div class="panel" id="admin" data-header="myHeader" data-footer="myFooter" data-tab="admin_tab">
-					<ul class="list inset">
+					<ul class="list">
     					<li><a >用户信息</a></li>
     					<li><a >门锁信息</a></li>
     					<li><a >开门记录</a></li>
