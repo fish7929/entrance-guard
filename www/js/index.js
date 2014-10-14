@@ -5,7 +5,9 @@ $(document).ready(function(){
         message: "您是否要退出应用？",
         cancelText: "取消",
         cancelCallback: function () {
-            console.log("cancelled");
+			$("#exit_tab").removeClass("pressed");
+			//选取前一个tab的id（window.location.hash+"_tab"）
+			$(window.location.hash+"_tab").addClass("pressed");
         },
         doneText: "确认",
         doneCallback: function () {

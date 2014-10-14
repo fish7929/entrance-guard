@@ -9,9 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/icons.css">
 		<script type="text/javascript" charset="utf-8" src="ui/appframework.ui.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="js/jquery-2.1.1.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jq.appframework.mini.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/ui/af.ui.jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/af.plugins.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jq.appframework.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="ui/af.ui.jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/af.plugins.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="css/index.css" />  
 		<link rel="stylesheet" type="text/css" href="css/login.css">       
@@ -26,7 +26,7 @@
         <script type="text/javascript">
             if (!((window.DocumentTouch && document instanceof DocumentTouch) || 'ontouchstart' in window)) {
                 var script = document.createElement("script");
-                script.src = "plugins/af.desktopBrowsers.js";
+                script.src = "js/af.desktopBrowsers.js";
                 var tag = $("head").append(script);
             }
 			$.ui.ready(function(){ 
@@ -61,12 +61,6 @@
 					<h1>设置<h1>
 				</div>
 				<!--setting panel end-->
-				
-				<!-- exit panel start-->
-				<div class="panel" id="exit" data-header="myHeader" data-footer="myFooter" data-tab="exit_tab">
-					<h1>退出<h1>
-				</div>
-				<!--exit panel end-->
 				
 				<!--adminlogin panel start-->
 				<div class="panel" id="adminlogin" data-header=none data-footer=none data-defer="adminlogin.html">
