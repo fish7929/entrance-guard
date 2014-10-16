@@ -11,7 +11,7 @@ $(document).ready(function(){
         },
         doneText: "确认",
         doneCallback: function () {
-            console.log("Done for!");
+             navigator.app.exitApp();
         },
         cancelOnly: false
     });
