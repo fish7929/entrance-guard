@@ -1,0 +1,17 @@
+#afui #admin .myFloat{
+	float: left;
+}
+#afui #admin img{
+	width: 80px;
+	margin-right: 10px;
+}
+#afui #admin li a{
+	height: 90px;
+	padding: 5px 5px 5px 5px;
+}
+#afui #admin h3{
+	margin-top: 20px;
+}
+#afui #admin p, h3{
+	margin-left:5px;
+}
