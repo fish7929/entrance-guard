@@ -115,5 +115,8 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.trSelected{
+background-color: #51b2f6; 
+}
 
 

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+//退出确认
     $("#exit_tab").click(function(){
         $("#afui").popup({
         title: "请确认",
@@ -15,6 +16,14 @@ $(document).ready(function(){
         },
         cancelOnly: false
     });
-    })
-
+    });
+//删除用户
+		$("#delete tbody tr").click(function (){
+				$(this).toggleClass("trSelected");
+		});
+		$('#RemoveUser').click(function() {
+				$("tr.trSelected").remove();	
+		});
 });
+				
+   
