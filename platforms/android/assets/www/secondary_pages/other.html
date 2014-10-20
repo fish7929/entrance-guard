@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<link rel="stylesheet" type="text/css" href="../css/af.ui.css">
+		<link rel="stylesheet" type="text/css" href="../css/icons.css">
+		<script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.1.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/jq.appframework.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../ui/af.ui.jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />  
+		<link rel="stylesheet" type="text/css" href="../css/login.css">       
+		<link rel="stylesheet" type="text/css" href="../css/user.css">       
+		<link rel="stylesheet" type="text/css" href="../css/admin.css">       
+		<link rel="stylesheet" type="text/css" href="../css/setting.css">       
+		<link rel="stylesheet" type="text/css" href="../css/adminlogin.css">       
+        
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<!-- include af.desktopBrowsers.js on desktop browsers only -->
+        <script type="text/javascript">
+            if (!((window.DocumentTouch && document instanceof DocumentTouch) || 'ontouchstart' in window)) {
+                var script = document.createElement("script");
+                script.src = "../js/af.desktopBrowsers.js";
+                var tag = $("head").append(script);
+            }
+			$.ui.ready(function(){ 
+				//$("#afui").get(0).className='ios7'; //设置属于那种风格 
+			});
+        </script>
+        <title>NFC门禁</title>
+    </head>
+    <body>
+		<div id="afui" class="">
+			<div id="content">
+				<!-- user info panel start-->
+				<div class="panel" id="other"  selected="true" data-header="myHeader" data-footer=none >
+					<h1>其他</h1>
+				</div>
+				<!--user info panel end-->
+			</div>
+			<header id="myHeader">
+				<a class="icon button left" style="float: left;"  href="../index.html#admin" data-ignore="True">返回</a>
+				<h1>其他</h1>
+				<a class="icon button check" style="float: right;"  >保存</a>
+			</header>
+		</div>
+    </body>
+</html>
