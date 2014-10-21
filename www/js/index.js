@@ -17,10 +17,40 @@ $(document).ready(function(){
         cancelOnly: false
     });
     });
+//添加用户
+		$('#addconfirm').click(function() {
+		var newtr = '<tr><td></td><td></td><td></td></tr>';
+		$("table").append(newtr);
+		$('table tr:last td:eq(0)').html($("#addtype").val());
+		$('table tr:last td:eq(1)').html($("#addname").val());
+		$('table tr:last td:eq(2)').html($("#addno").val());
+		
+    $("#afui").popup({
+    title: "添加成功",
+    message: "是否继续添加？",
+    cancelText: "结束",
+    cancelCallback: function () {
+    	$.ui.hideModal();
+    	$("#addname").val("");
+    	$("#addno").val("");
+    },
+    doneText: "继续",
+    doneCallback: function () {
+    	$("#addname").val("");
+    	$("#addno").val("");   
+    },
+    cancelOnly: false
+		});	
+		
+	});
 //删除用户
 		$("#delete tbody tr").click(function (){
 				$(this).toggleClass("trSelected");
 		});
+		$("#SelectAll").click(function () {
+			$("tbody tr").removeClass("trSelected").addClass("trSelected")
+		});
+			
 		$('#RemoveUser').click(function() {
 				$("tr.trSelected").remove();	
 		});

@@ -51,11 +51,32 @@
 							</tr>
 						</tbody>
 					</table>
-					<a class="icon button add" id="addUser" >添加</a>
-					
-				</div>
-				<!--user info panel end-->
+										
+					<a class="icon button add" id="addUser" href="#addmodal" >添加</a>
 			</div>
+			
+			<div class="panel" data-title="添加用户" data-modal="true" id="addmodal">
+				
+			  <div style="-webkit-transform: translate3d(0, 0, 0);margin-left:10%;">
+						<h3>选择类型</h3>
+			  		<select id="addtype" style="-webkit-appearance: listbox;width:75%;">
+			  			<option value="1">手机</option>
+			  			<option value="2">卡</option>
+			  			<option value="3">密码</option>
+			  		</select>
+		
+			  	<br>
+			  	<br>
+			  	<span><h3>昵称</h3><input id="addname" type="text" style="width:75%;"></span>
+			  	<br>
+			  	<br>
+			  	<span><h3>卡号</h3><input id="addno" type="text" style="width:75%;"></span>
+			  	<br>
+			  	<a class="icon button add" id="addconfirm">确认</a>
+			  </div>
+
+			</div>
+			
 			<header id="myHeader" >
 				<a class="icon button left" style="float: left;"  href="../index.html#admin" data-ignore="True">返回</a>
 				<h1>添加用户</h1>
