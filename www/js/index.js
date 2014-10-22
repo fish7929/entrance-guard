@@ -19,12 +19,12 @@ $(document).ready(function(){
     });
 //添加用户
 		$('#addconfirm').click(function() {
-		var newtr = '<tr><td></td><td></td><td></td></tr>';
-		$("table").append(newtr);
-		$('table tr:last td:eq(0)').html($("#addtype").val());
-		$('table tr:last td:eq(1)').html($("#addname").val());
-		$('table tr:last td:eq(2)').html($("#addno").val());
+		$("tbody").append('<tr><td></td><td></td><td></td></tr>');
+		$('tbody tr:last td:eq(0)').html($("tbody tr:last").index()+1).val();
+		$('tbody tr:last td:eq(1)').html($("#addname").val());
+		$('tbody tr:last td:eq(2)').html($("#addno").val());
 		
+		//弹窗
     $("#afui").popup({
     title: "添加成功",
     message: "是否继续添加？",
